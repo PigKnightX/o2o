@@ -152,6 +152,13 @@
       <artifactId>commons-fileupload</artifactId>
       <version>1.4</version>
     </dependency>
+    <!--图片管理-->
+    <!-- https://mvnrepository.com/artifact/net.coobird/thumbnailator -->
+    <dependency>
+      <groupId>net.coobird</groupId>
+      <artifactId>thumbnailator</artifactId>
+      <version>0.4.8</version>
+    </dependency>
   </dependencies>
 
   <build>
