@@ -1,6 +1,32 @@
-2020-04-12 18:29:29.105[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) values (?,?,?,?, ?,?,?,?,?,?, ?,?,?) 
-2020-04-12 18:29:29.144[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), null, 1(Long), 测试的店铺(String), test(String), test(String), test(String), test(String), null, 2020-04-12 18:29:28.781(Timestamp), null, 1(Integer), 审核中(String)
-2020-04-12 18:29:29.150[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-<==    Updates: 1
-2020-04-12 21:19:51.502[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_desc=?, shop_addr=?, last_edit_time=? where shop_id=? 
-2020-04-12 21:19:51.533[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==> Parameters: 测试描述(String), 测试地址(String), 2020-04-12 21:19:51.233(Timestamp), 1(Long)
-2020-04-12 21:19:51.537[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-<==    Updates: 1
+2020-04-21 12:18:08.603[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) values (?,?,?,?, ?,?,?,?,?,?, ?,?,?) 
+2020-04-21 12:18:08.634[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), null, 1(Long), 测试的店铺1(String), test1(String), test1(String), test1(String), null, null, 2020-04-21 12:18:08.571(Timestamp), 2020-04-21 12:18:08.571(Timestamp), 0(Integer), 审核中(String)
+2020-04-21 12:18:08.665[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2020-04-21 12:18:08.696[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current relativeAddr is:\upload\item\shop\2\2020042112180844981.jpg
+2020-04-21 12:18:08.696[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current complete addr is:D:\o2o\image\\upload\item\shop\2\2020042112180844981.jpg
+2020-04-21 12:18:08.790[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, shop_category_id=? where shop_id=? 
+2020-04-21 12:18:08.790[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==> Parameters: 测试的店铺1(String), test1(String), test1(String), test1(String), \upload\item\shop\2\2020042112180844981.jpg(String), 2020-04-21 12:18:08.571(Timestamp), 0(Integer), 审核中(String), 1(Long), 2(Long)
+2020-04-21 12:18:08.790[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-<==    Updates: 1
+2020-04-21 12:29:40.429[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) values (?,?,?,?, ?,?,?,?,?,?, ?,?,?) 
+2020-04-21 12:29:40.463[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), null, 1(Long), 测试的店铺1(String), test1(String), test1(String), test1(String), null, null, 2020-04-21 12:29:40.396(Timestamp), 2020-04-21 12:29:40.396(Timestamp), 0(Integer), 审核中(String)
+2020-04-21 12:29:40.464[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2020-04-21 12:29:40.482[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\3\2020042112294074783.jpg
+2020-04-21 12:29:40.482[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current complete addr is:D:\o2o\image\upload\item\shop\3\2020042112294074783.jpg
+2020-04-21 12:29:40.528[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, shop_category_id=? where shop_id=? 
+2020-04-21 12:29:40.529[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==> Parameters: 测试的店铺1(String), test1(String), test1(String), test1(String), upload\item\shop\3\2020042112294074783.jpg(String), 2020-04-21 12:29:40.396(Timestamp), 0(Integer), 审核中(String), 1(Long), 3(Long)
+2020-04-21 12:29:40.529[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-<==    Updates: 1
+2020-04-21 12:31:54.338[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) values (?,?,?,?, ?,?,?,?,?,?, ?,?,?) 
+2020-04-21 12:31:54.371[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), null, 1(Long), 测试的店铺1(String), test1(String), test1(String), test1(String), null, null, 2020-04-21 12:31:54.312(Timestamp), 2020-04-21 12:31:54.312(Timestamp), 0(Integer), 审核中(String)
+2020-04-21 12:31:54.372[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2020-04-21 12:31:54.580[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\4\2020042112315417086.jpg
+2020-04-21 12:31:54.580[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current complete addr is:D:\o2o\image\upload\item\shop\4\2020042112315417086.jpg
+2020-04-21 12:31:54.872[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, shop_category_id=? where shop_id=? 
+2020-04-21 12:31:54.872[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==> Parameters: 测试的店铺1(String), test1(String), test1(String), test1(String), upload\item\shop\4\2020042112315417086.jpg(String), 2020-04-21 12:31:54.312(Timestamp), 0(Integer), 审核中(String), 1(Long), 4(Long)
+2020-04-21 12:31:54.872[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-<==    Updates: 1
+2020-04-21 12:36:57.025[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr, phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) values (?,?,?,?, ?,?,?,?,?,?, ?,?,?) 
+2020-04-21 12:36:57.060[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), null, 1(Long), 测试的店铺1(String), test1(String), test1(String), test1(String), null, null, 2020-04-21 12:36:57.003(Timestamp), 2020-04-21 12:36:57.003(Timestamp), 0(Integer), 审核中(String)
+2020-04-21 12:36:57.061[main]DEBUG cn.pigknight.o2o.dao.ShopDao.insertShop-<==    Updates: 1
+2020-04-21 12:36:57.082[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\5\2020042112365798903.jpg
+2020-04-21 12:36:57.083[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current complete addr is:D:\o2o\image\upload\item\shop\5\2020042112365798903.jpg
+2020-04-21 12:36:57.199[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, shop_category_id=? where shop_id=? 
+2020-04-21 12:36:57.200[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-==> Parameters: 测试的店铺1(String), test1(String), test1(String), test1(String), upload\item\shop\5\2020042112365798903.jpg(String), 2020-04-21 12:36:57.003(Timestamp), 0(Integer), 审核中(String), 1(Long), 5(Long)
+2020-04-21 12:36:57.200[main]DEBUG cn.pigknight.o2o.dao.ShopDao.updateShop-<==    Updates: 1
