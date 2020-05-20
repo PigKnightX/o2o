@@ -159,6 +159,14 @@
       <artifactId>thumbnailator</artifactId>
       <version>0.4.8</version>
     </dependency>
+
+    <!--Kaptcha验证码-->
+    <!-- https://mvnrepository.com/artifact/com.github.penggle/kaptcha -->
+    <dependency>
+      <groupId>com.github.penggle</groupId>
+      <artifactId>kaptcha</artifactId>
+      <version>2.3.2</version>
+    </dependency>
   </dependencies>
 
   <build>

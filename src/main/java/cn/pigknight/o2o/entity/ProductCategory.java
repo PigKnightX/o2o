@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class ProductCategory {
     private Long productCategoryId;
-    private Long shopId;
+    private Long shopId;//商品类别只需shopId信息
     private String productCategoryName;
-    private Integer priority;
+    private Integer priority;//优先级
     private Date createTime;
 
     public Long getProductCategoryId() {

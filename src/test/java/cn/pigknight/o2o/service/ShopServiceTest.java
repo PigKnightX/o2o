@@ -7,12 +7,17 @@ import cn.pigknight.o2o.entity.PersonInfo;
 import cn.pigknight.o2o.entity.Shop;
 import cn.pigknight.o2o.entity.ShopCategory;
 import cn.pigknight.o2o.enums.ShopStateEnum;
-import com.sun.org.apache.xpath.internal.operations.Equals;
+import cn.pigknight.o2o.exceptions.ShopOperationException;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -21,7 +26,32 @@ public class ShopServiceTest extends BaseTest {
     private ShopService shopService;
 
     @Test
-    public void testAddShop(){
+    public void testGetShopList(){
+        Shop shopCondition = new Shop();
+        ShopCategory sc = new ShopCategory();
+        sc.setShopCategoryId(1L);
+        shopCondition.setShopCategory(sc);
+        ShopExecution se = shopService.getShopList(shopCondition,2,2);
+        System.out.println("店铺列表数目："+se.getShopList().size());
+        System.out.println("店铺总数"+se.getCount());
+    }
+
+    @Test
+    @Ignore
+    public void testModifyShop() throws ShopOperationException,FileNotFoundException{
+        //Shop shop = shopService.getByShopId(1L);
+        Shop shop = new Shop();
+        shop.setShopId(7L);
+        shop.setShopName("修改后的name");
+        File shopImg = new File("F://o2o//image//xiaohuangren.jpg");
+        InputStream is = new FileInputStream(shopImg);
+        ShopExecution shopExecution = shopService.modifyShop(shop, is, "xiaohuangren.jpg");
+        System.out.println("新的图片地址为"+shopExecution.getShop().getShopImg());
+    }
+
+    @Test
+    @Ignore
+    public void testAddShop() throws FileNotFoundException {
         Shop shop = new Shop();
         PersonInfo owner = new PersonInfo();
         Area area = new Area();
@@ -31,16 +61,16 @@ public class ShopServiceTest extends BaseTest {
         shopCategory.setShopCategoryId(1L);
         shop.setOwner(owner);
         shop.setShopCategory(shopCategory);
-        shop.setShopName("测试的店铺1");
-        shop.setShopDesc("test1");
-        shop.setShopAddr("test1");
-        shop.setPhone("test1");
+        shop.setShopName("测试的店铺3");
+        shop.setShopDesc("test3");
+        shop.setShopAddr("test3");
+        shop.setPhone("test3");
         shop.setCreateTime(new Date());
         shop.setEnableStatus(ShopStateEnum.CHECK.getState());
         shop.setAdvice("审核中");
         File shopImg = new File("F://o2o//image//xiaohuangren.jpg");
-
-        ShopExecution se = shopService.addShop(shop, shopImg);
+        InputStream is = new FileInputStream(shopImg);
+        ShopExecution se = shopService.addShop(shop, is,shopImg.getName());
         assertEquals(ShopStateEnum.CHECK.getState(),se.getState());
     }
 }
