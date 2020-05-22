@@ -1,3 +1,12 @@
-2020-05-20 15:42:52.224[main]DEBUG c.p.o.d.P.batchInsertProductCategory-==>  Preparing: INSERT into tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
-2020-05-20 15:42:52.272[main]DEBUG c.p.o.d.P.batchInsertProductCategory-==> Parameters: 商品类别1(String), 1(Integer), 2020-05-20 15:42:51.851(Timestamp), 1(Long), 商品类别2(String), 2(Integer), 2020-05-20 15:42:51.851(Timestamp), 1(Long)
-2020-05-20 15:42:52.289[main]DEBUG c.p.o.d.P.batchInsertProductCategory-<==    Updates: 2
+2020-05-22 14:44:41.961[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current relativeAddr is:upload\item\shop\1\2020052214444118804.jpg
+2020-05-22 14:44:41.964[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current complete addr is:D:\o2o\image\upload\item\shop\1\2020052214444118804.jpg
+2020-05-22 14:44:42.177[main]DEBUG cn.pigknight.o2o.dao.ProductDao.insertProduct-==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,point,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?,?, ?) 
+2020-05-22 14:44:42.219[main]DEBUG cn.pigknight.o2o.dao.ProductDao.insertProduct-==> Parameters: 测试商品1(String), 测试商品1(String), upload\item\shop\1\2020052214444118804.jpg(String), null, null, 20(Integer), 2020-05-22 14:44:41.956(Timestamp), 2020-05-22 14:44:41.956(Timestamp), 1(Integer), null, 6(Long), 1(Long)
+2020-05-22 14:44:42.225[main]DEBUG cn.pigknight.o2o.dao.ProductDao.insertProduct-<==    Updates: 1
+2020-05-22 14:44:42.249[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current relativeAddr is :upload\item\shop\1\2020052214444250643.jpg
+2020-05-22 14:44:42.249[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current complete addr is :D:\o2o\image\upload\item\shop\1\2020052214444250643.jpg
+2020-05-22 14:44:42.270[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current relativeAddr is :upload\item\shop\1\2020052214444232468.jpg
+2020-05-22 14:44:42.270[main]DEBUG cn.pigknight.o2o.util.ImageUtil-current complete addr is :D:\o2o\image\upload\item\shop\1\2020052214444232468.jpg
+2020-05-22 14:44:42.337[main]DEBUG c.p.o2o.dao.ProductImgDao.batchInsertProductImg-==>  Preparing: INSERT INTO tb_product_img(img_addr,img_desc,priority, create_time,product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2020-05-22 14:44:42.338[main]DEBUG c.p.o2o.dao.ProductImgDao.batchInsertProductImg-==> Parameters: upload\item\shop\1\2020052214444250643.jpg(String), null, null, 2020-05-22 14:44:42.27(Timestamp), 5(Long), upload\item\shop\1\2020052214444232468.jpg(String), null, null, 2020-05-22 14:44:42.316(Timestamp), 5(Long)
+2020-05-22 14:44:42.339[main]DEBUG c.p.o2o.dao.ProductImgDao.batchInsertProductImg-<==    Updates: 2

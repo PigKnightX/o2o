@@ -17,6 +17,17 @@ public class Product {
     //0.下架 1.在前端展示系统展示
     private Integer enableStatus;
 
+    // 商品积分
+    private Integer point;
+
+    public Integer getPoint() {
+        return point;
+    }
+
+    public void setPoint(Integer point) {
+        this.point = point;
+    }
+
     private List<ProductImg> productImgList;
     private ProductCategory productCategory;
     private Shop shop;

@@ -1,6 +1,7 @@
 package cn.pigknight.o2o.service;
 
 import cn.pigknight.o2o.BaseTest;
+import cn.pigknight.o2o.dto.ImageHolder;
 import cn.pigknight.o2o.dto.ShopExecution;
 import cn.pigknight.o2o.entity.Area;
 import cn.pigknight.o2o.entity.PersonInfo;
@@ -45,7 +46,8 @@ public class ShopServiceTest extends BaseTest {
         shop.setShopName("修改后的name");
         File shopImg = new File("F://o2o//image//xiaohuangren.jpg");
         InputStream is = new FileInputStream(shopImg);
-        ShopExecution shopExecution = shopService.modifyShop(shop, is, "xiaohuangren.jpg");
+        ImageHolder imageHolder = new ImageHolder("xiaohuangren.jpg",is);
+        ShopExecution shopExecution = shopService.modifyShop(shop, imageHolder);
         System.out.println("新的图片地址为"+shopExecution.getShop().getShopImg());
     }
 
@@ -70,7 +72,8 @@ public class ShopServiceTest extends BaseTest {
         shop.setAdvice("审核中");
         File shopImg = new File("F://o2o//image//xiaohuangren.jpg");
         InputStream is = new FileInputStream(shopImg);
-        ShopExecution se = shopService.addShop(shop, is,shopImg.getName());
+        ImageHolder imageHolder = new ImageHolder("xiaohuangren.jpg",is);
+        ShopExecution se = shopService.addShop(shop,imageHolder);
         assertEquals(ShopStateEnum.CHECK.getState(),se.getState());
     }
 }
